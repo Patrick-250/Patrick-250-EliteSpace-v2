@@ -14,7 +14,11 @@ interface HeightProps {
 export default function OutlinedCard({ title, height }: CardProps) {
   return (
     <Box sx={{ minWidth: 275, flex: 1 }}>
-      <Card variant="outlined" title={title} sx={{ height: height }}>
+      <Card
+        variant="outlined"
+        title={title}
+        sx={{ height: { xs: height.xs, md: height.md } }}
+      >
         <CardContent>
           <Typography
             gutterBottom
