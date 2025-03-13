@@ -10,26 +10,17 @@ function AppRouter() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MockComponent />}></Route>
+        <Route path="/" element={<Login />}></Route>
         {/* <Route path="/mock" element={<MockComponent />}></Route> */}
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/api-call" element={<TestApiCall />}></Route>
         {/* <Route path="/mock" element={<MockComponent />}></Route> */}
-        <Route
-          path="/"
-          element={<HomePage />}
-        ></Route>
-        <Route
-          path="/signup"
-          element={<SignupPage />}
-        />
-        <Route
-          path="/login"
-          element={<Login />}
-        ></Route>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/password-reset" element={<PasswordReset />}></Route>
-       </Routes>
+      </Routes>
     </Router>
   );
 }

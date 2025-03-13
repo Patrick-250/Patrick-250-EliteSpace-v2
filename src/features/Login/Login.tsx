@@ -1,4 +1,13 @@
-import { Box, TextField, Stack, InputLabel, Link, Button, Container, Typography } from "@mui/material";
+import {
+  Box,
+  TextField,
+  Stack,
+  InputLabel,
+  Link,
+  Button,
+  Container,
+  Typography,
+} from "@mui/material";
 
 const Login = () => {
   return (
@@ -23,7 +32,12 @@ const Login = () => {
       >
         <Stack
           component="section"
-          sx={{ display: "flex", flexDirection: "column", gap: 1, alignItems: "center" }}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 1,
+            alignItems: "center",
+          }}
         >
           <Box>Logo</Box>
           <Typography
@@ -44,20 +58,27 @@ const Login = () => {
             justifyContent: "space-between",
           }}
         >
-          <Stack sx={{ gap: 2, display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <InputLabel
-              htmlFor="email"
-              sx={{ width: "100%", color: "black" }}
-            >
+          <Stack
+            sx={{
+              gap: 2,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <InputLabel htmlFor="email" sx={{ width: "100%", color: "black" }}>
               Email
             </InputLabel>
-            <TextField
-              size="small"
-              variant="outlined"
-              sx={{ width: "85%" }}
-            />
+            <TextField size="small" variant="outlined" sx={{ width: "85%" }} />
           </Stack>
-          <Stack sx={{ gap: 2, display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <Stack
+            sx={{
+              gap: 2,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <InputLabel
               htmlFor="password"
               sx={{ width: "100%", color: "black" }}
@@ -72,10 +93,7 @@ const Login = () => {
             />
           </Stack>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1, ml: 2 }}>
-            <input
-              type="checkbox"
-              id="remember-me"
-            />
+            <input type="checkbox" id="remember-me" />
             <label
               htmlFor="remember-me"
               style={{ fontSize: 13, paddingTop: 2 }}
@@ -83,16 +101,33 @@ const Login = () => {
               Remember my login
             </label>
           </Box>
-          <Stack sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1.5 }}>
+          <Stack
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 1.5,
+            }}
+          >
             <Button
               variant="contained"
-              sx={{ width: "58%", bgcolor: "#28a2a2", color: "white", textTransform: "none" }}
+              sx={{
+                width: "58%",
+                bgcolor: "#28a2a2",
+                color: "white",
+                textTransform: "none",
+              }}
             >
               Log in
             </Button>
             <Button
               variant="contained"
-              sx={{ width: "58%", bgcolor: "#1a3b5d", color: "white", textTransform: "none" }}
+              sx={{
+                width: "58%",
+                bgcolor: "#1a3b5d",
+                color: "white",
+                textTransform: "none",
+              }}
             >
               Register
             </Button>
