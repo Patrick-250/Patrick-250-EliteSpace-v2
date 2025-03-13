@@ -11,8 +11,10 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
+    "@mui/styled-engine": "^6.4.6",
     "@reduxjs/toolkit": "^2.5.1",
     "@supabase/supabase-js": "^2.49.1",
     "playwright": "^1.50.1",
